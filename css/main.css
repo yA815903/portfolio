@@ -1,97 +1,131 @@
-.container, .container-md, .container-sm {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
+/* Style.css */
 
-@media (min-width: 768px) {
- .container, .container-md {
-    max-width: 720px;
- }
-}
-.smaller-image {
-    max-width: 300px;
-    height: auto;
-  }
-  .bg-info {
-    background-color: #2a3e79 !important;
-  }
-  .navbar {
-    background-color: #dc3545 !important;
-  }
-  .navbar-brand img {
-    max-height: 100px;
-  }
-  
-
-@media (min-width: 576px) {
- .container, .container-sm {
-    max-width: 540px;
- }
-}
-
-@media (min-width: 992px) {
- .container {
-    max-width: 960px;
- }
-}
-*, ::after, ::before {
+body{
+    margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background:#249096;
+    color:#000;
+    overflow-x:hidden
 }
-user agent stylesheet
-div {
+
+ul {
+   list-style: none;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: #999;
+    transition:all 0.5s ease-in-out;
+
+}
+
+a:hover {
+color: #000000 !important;
+}
+
+/* Navbar*/
+.navbar{
+position: relative;
+background-color: #EB533E;
+}
+
+
+.navbar ul li {
+position: relative;
+margin-left: 2.5rem;
+margin-right: 1rem;
+}
+
+.navbar ul li a{
+position: relative;
+display: block;
+font-family: "Poppins",sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 14px;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+color: black;
+}
+/* Form Container */
+.container form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(14, 2, 58, 0.1);
+}
+
+/* Form Labels */
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Form Input Fields */
+.form-control {
     display: block;
-}
-body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
     background-color: #fff;
-}
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+/* Form Textarea */
+.form-control textarea {
+    resize: vertical;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
+
+/* Form Submit Button */
+.btn-primary {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
 }
-    footer {
-      background-color: #dc3545 !important;
-    }
- 
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+
+.footer{
+    position: relative;
+    padding-top: 50px;
+    background-color:#EB533E;
+    color: #EB533E;
+}
