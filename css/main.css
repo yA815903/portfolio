@@ -9,7 +9,18 @@ body{
     color:#000;
     overflow-x:hidden
 }
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #f2f2f2;
+    padding: 8px;
+    z-index: 1000;
+}
 
+.skip-link:focus {
+    top: 0;
+}
 ul {
    list-style: none;
 
